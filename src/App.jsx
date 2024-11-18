@@ -6,9 +6,15 @@ import NavBar from '../components/Navbar'
 import WeatherComponent from '../components/WeatherComponen'
 
 const App = () => {
-  return (
-  
-  );
+  return (    
+    <div>
+    <NavBar />
+    <div style={{ padding: "20px" }}>
+      <WeatherComponent />
+    </div>
+  </div>
+);
+
 };
 
 export default App;

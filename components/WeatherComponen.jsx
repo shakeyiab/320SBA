@@ -19,7 +19,7 @@ const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
     
   };
 
-  // Fetch weather data
+  // Fetch weather data from api
   const fetchWeatherData = async (lat, lon) => {
     setLoading(true);
     try {
@@ -60,7 +60,7 @@ const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
   return (
     <div>
-      <h2>Weather Info</h2>
+      <h2>Current Weather Info</h2>
       <div>
         <label htmlFor="city-select">Select a city: </label>
         <select id="city-select" value={selectedCity} onChange={handleCityChange}>
